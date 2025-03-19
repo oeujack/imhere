@@ -13,7 +13,7 @@
 
 > Este é um aplicativo mobile simples usando React Native. faz parte do módulo 01 do programa de aceleração Ignite da [Rocketseat](http://app.ropcketseat.com.br)
 
-<img src="./assets/img.png"/>
+<img src="./img.png"/>
 
 ## Detalhes do aplicativo
 
