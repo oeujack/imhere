@@ -9,8 +9,8 @@ export function Home() {
   return (
     <View style={styles.container}>
       <Text style={styles.eventName}>Nome do evento</Text>
-      <Text style={styles.dayName}>Domingo, 16 de Março de 2025.</Text>
-      <View style={styles.viewAdd}>
+      <Text style={styles.dayName}>Quarta-feira, 19 de Março de 2025.</Text>
+      <View style={styles.viewForm}>
         <TextInput
           style={styles.input}
           placeholder="Nome do participante"

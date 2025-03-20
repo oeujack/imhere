@@ -19,12 +19,12 @@ export const styles = StyleSheet.create({
   input: {
     backgroundColor: '#1F1E25',
     height: 56,
-    width: 300,
-    // width: "75px",
+    flex: 1,
     borderRadius: 5,
     color: '#ffffff',
     padding: 16,
     fontSize: 16,
+    marginRight: 12,
   },
   buttonText: {
     color: '#ffffff',
@@ -33,16 +33,17 @@ export const styles = StyleSheet.create({
   buttonAdd: {
     width: 56,
     height: 56,
-
     borderRadius: 56,
     backgroundColor: '#31CF67',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  viewAdd: {
+  viewForm: {
+    width: '100%',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    marginTop: 13,
+    marginTop: 36,
+    marginBottom: 42,
   },
 })
