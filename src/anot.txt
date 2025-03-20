@@ -1,2 +1,20 @@
 showsVerticalScrollIndicator={false} = serve para desabilitar a barra de rolagem
- keyboardType = propriedade do <TextInput /> que possibilita declarar qual o tipo do TextInput
+keyboardType = propriedade do <TextInput /> que possibilita declarar qual o tipo do TextInput
+<FlatList /> = serve como <ScrollView> exemplo de estrutura:
+
+
+<FlatList
+  data={participants}                          ------------------------> participants é um array
+  keyExtractor={(item) => item}                ------------------------> item serve para pegar o identificador unico do array
+  showsHorizontalScrollIndicator={false}       ------------------------> desabilita a barra de rolagem na horizontal
+  renderItem={({ item }) => (                  ------------------------> vai renderizar os valores
+    <Participant                               ------------------------> componente
+      key={item}
+      name={item}
+      handleDeleteUser={handleDeleteUser}
+    />
+  )}
+  ListEmptyComponent={() => (                 ------------------------> serve para renderizar um componente que vai indicar que a lista esta vazia
+    <Text style={styles.listEmpty}>Lista de participantes vazia</Text>
+  )}
+/>

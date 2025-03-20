@@ -1,10 +1,4 @@
-import {
-  View,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  ScrollView,
-} from 'react-native'
+import { View, Text, TextInput, TouchableOpacity, FlatList } from 'react-native'
 import { styles } from './styles'
 import { Participant } from '../../components/Participant'
 import { useState } from 'react'
@@ -51,16 +45,23 @@ export function Home() {
           <Text style={styles.buttonText}>+</Text>
         </TouchableOpacity>
       </View>
-      {/* showsVerticalScrollIndicator={false} -> desativa a barra de rolagem */}
-      <ScrollView showsVerticalScrollIndicator={false}>
-        {participants.map((value, index) => (
+      <FlatList
+        data={participants}
+        keyExtractor={(item) => item}
+        showsHorizontalScrollIndicator={false}
+        ListEmptyComponent={() => (
+          <Text style={styles.listEmptyText}>
+            Adicione participantes a sua lista de presença.
+          </Text>
+        )}
+        renderItem={({ item }) => (
           <Participant
-            key={index}
-            name={value}
+            key={item}
+            name={item}
             handleDeleteUser={handleDeleteUser}
           />
-        ))}
-      </ScrollView>
+        )}
+      />
     </View>
   )
 }
