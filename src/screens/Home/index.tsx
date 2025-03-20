@@ -1,10 +1,13 @@
 import { View, Text, TextInput, TouchableOpacity } from 'react-native'
 import { styles } from './styles'
 import { Participant } from '../../components/Participant'
+import { useState } from 'react'
 
 export function Home() {
+  const [name, setName] = useState('')
+
   function handleAddUser() {
-    console.log('Você clicou no botão de adicionar!')
+    console.log('Clicou!!')
   }
 
   return (
@@ -23,7 +26,9 @@ export function Home() {
           <Text style={styles.buttonText}>+</Text>
         </TouchableOpacity>
       </View>
-      <Participant />
+      <Participant name="Naruto" />
+      <Participant name="Sakura" />
+      <Participant name="Sasuke" />
     </View>
   )
 }

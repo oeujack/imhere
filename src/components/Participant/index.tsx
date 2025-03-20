@@ -1,19 +1,19 @@
 import { View, Text, TouchableOpacity } from 'react-native'
 import { styles } from './styles'
 
-export function Participant() {
-  const array = Array.from({ length: 5 }, (_, index) => index + 1)
+interface ParticipantProps {
+  name: string;
+}
 
+export function Participant({ name }: ParticipantProps) {
   return (
     <>
-      {array.map((index) => (
-        <View style={styles.container} key={index}>
-          <Text style={styles.name}>Jackson dos Santos</Text>
-          <TouchableOpacity style={styles.buttonDelete}>
-            <Text style={styles.buttonText}>-</Text>
-          </TouchableOpacity>
-        </View>
-      ))}
+      <View style={styles.container}>
+        <Text style={styles.name}>{name}</Text>
+        <TouchableOpacity style={styles.buttonDelete}>
+          <Text style={styles.buttonText}>-</Text>
+        </TouchableOpacity>
+      </View>
     </>
   )
 }
