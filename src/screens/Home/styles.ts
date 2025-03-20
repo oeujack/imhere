@@ -19,9 +19,30 @@ export const styles = StyleSheet.create({
   input: {
     backgroundColor: '#1F1E25',
     height: 56,
+    width: 300,
+    // width: "75px",
     borderRadius: 5,
     color: '#ffffff',
     padding: 16,
     fontSize: 16,
+  },
+  buttonText: {
+    color: '#ffffff',
+    fontSize: 24,
+  },
+  buttonAdd: {
+    width: 56,
+    height: 56,
+
+    borderRadius: 56,
+    backgroundColor: '#31CF67',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  viewAdd: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginTop: 13,
   },
 })
