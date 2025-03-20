@@ -48,7 +48,7 @@ export function Home() {
       <FlatList
         data={participants}
         keyExtractor={(item) => item}
-        showsHorizontalScrollIndicator={false}
+        showsVerticalScrollIndicator={false}
         ListEmptyComponent={() => (
           <Text style={styles.listEmptyText}>
             Adicione participantes a sua lista de presença.

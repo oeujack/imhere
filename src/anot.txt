@@ -6,7 +6,7 @@ keyboardType = propriedade do <TextInput /> que possibilita declarar qual o tipo
 <FlatList
   data={participants}                          ------------------------> participants é um array
   keyExtractor={(item) => item}                ------------------------> item serve para pegar o identificador unico do array
-  showsHorizontalScrollIndicator={false}       ------------------------> desabilita a barra de rolagem na horizontal
+   showsVerticalScrollIndicator={false}       ------------------------> desabilita a barra de rolagem na vertical
   renderItem={({ item }) => (                  ------------------------> vai renderizar os valores
     <Participant                               ------------------------> componente
       key={item}
