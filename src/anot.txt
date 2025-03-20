@@ -2,7 +2,6 @@ showsVerticalScrollIndicator={false} = serve para desabilitar a barra de rolagem
 keyboardType = propriedade do <TextInput /> que possibilita declarar qual o tipo do TextInput
 <FlatList /> = serve como <ScrollView> exemplo de estrutura:
 
-
 <FlatList
   data={participants}                          ------------------------> participants é um array
   keyExtractor={(item) => item}                ------------------------> item serve para pegar o identificador unico do array
@@ -18,3 +17,13 @@ keyboardType = propriedade do <TextInput /> que possibilita declarar qual o tipo
     <Text style={styles.listEmpty}>Lista de participantes vazia</Text>
   )}
 />
+
+
+ <StatusBar /> = serve para destacar a barra de status do celular onde
+ fica as informações de conexão, bateria, horário..., exemplo de uso:
+
+<StatusBar
+  barStyle={'light-content'}          --------> serve para estilizar passando as propriedades disponiveis
+  backgroundColor="transparent"
+  translucent                         --------> serve para sobrepor o StatusBar
+/> 

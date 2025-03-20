@@ -1,7 +1,13 @@
-import { View, Text, TextInput, TouchableOpacity, FlatList } from 'react-native'
+import {
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  FlatList,
+  Alert,
+} from 'react-native'
 import { styles } from './styles'
 import { Participant } from '../../components/Participant'
-import { useState } from 'react'
 
 export function Home() {
   const participants = [
@@ -22,11 +28,25 @@ export function Home() {
   ]
 
   function handleAddUser() {
-    console.log('Adiciona!!')
+    if (participants.includes('Naruto')) {
+      return Alert.alert(
+        'Participante existe',
+        'Já existe participante na lista com esse nome.'
+      )
+    }
   }
 
   function handleDeleteUser(name: string) {
-    console.log(`Participante ${name} excluido!`)
+    Alert.alert('Remover', `Deseja remover o participante ${name} ?`, [
+      {
+        text: 'Sim',
+        onPress: () => Alert.alert('Deletado!', `Participante ${name} foi removido com sucesso!!!`),
+      },
+      {
+        text: 'Cancelar',
+        style: 'cancel',
+      },
+    ])
   }
 
   return (
