@@ -1,0 +1,2 @@
+showsVerticalScrollIndicator={false} = serve para desabilitar a barra de rolagem
+ keyboardType = propriedade do <TextInput /> que possibilita declarar qual o tipo do TextInput
