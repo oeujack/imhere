@@ -1,10 +1,31 @@
-import { View, Text, TextInput, TouchableOpacity } from 'react-native'
+import {
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  ScrollView,
+} from 'react-native'
 import { styles } from './styles'
 import { Participant } from '../../components/Participant'
 import { useState } from 'react'
 
 export function Home() {
-  const [name, setName] = useState('')
+  const participants = [
+    'Naruto',
+    'Sakura',
+    'Kakashi',
+    'Sasuke',
+    'Jiraya',
+    'Itachi',
+    'Gaara',
+    'Shikamaru',
+    'Konan',
+    'Temari',
+    'Tsunade',
+    'Gamakichi',
+    'Minato',
+    'Kabuto',
+  ]
 
   function handleAddUser() {
     console.log('Adiciona!!')
@@ -30,9 +51,16 @@ export function Home() {
           <Text style={styles.buttonText}>+</Text>
         </TouchableOpacity>
       </View>
-      <Participant name="Naruto" handleDeleteUser={handleDeleteUser} />
-      <Participant name="Sakura" handleDeleteUser={handleDeleteUser} />
-      <Participant name="Sasuke" handleDeleteUser={handleDeleteUser} />
+      {/* showsVerticalScrollIndicator={false} -> desativa a barra de rolagem */}
+      <ScrollView showsVerticalScrollIndicator={false}>
+        {participants.map((value, index) => (
+          <Participant
+            key={index}
+            name={value}
+            handleDeleteUser={handleDeleteUser}
+          />
+        ))}
+      </ScrollView>
     </View>
   )
 }
