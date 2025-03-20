@@ -7,7 +7,11 @@ export function Home() {
   const [name, setName] = useState('')
 
   function handleAddUser() {
-    console.log('Clicou!!')
+    console.log('Adiciona!!')
+  }
+
+  function handleDeleteUser(name: string) {
+    console.log(`Participante ${name} excluido!`)
   }
 
   return (
@@ -26,9 +30,9 @@ export function Home() {
           <Text style={styles.buttonText}>+</Text>
         </TouchableOpacity>
       </View>
-      <Participant name="Naruto" />
-      <Participant name="Sakura" />
-      <Participant name="Sasuke" />
+      <Participant name="Naruto" handleDeleteUser={handleDeleteUser} />
+      <Participant name="Sakura" handleDeleteUser={handleDeleteUser} />
+      <Participant name="Sasuke" handleDeleteUser={handleDeleteUser} />
     </View>
   )
 }
