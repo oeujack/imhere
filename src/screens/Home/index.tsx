@@ -1,5 +1,6 @@
 import { View, Text, TextInput, TouchableOpacity } from 'react-native'
 import { styles } from './styles'
+import { Participant } from '../../components/Participant'
 
 export function Home() {
   function handleAddUser() {
@@ -15,7 +16,6 @@ export function Home() {
           style={styles.input}
           placeholder="Nome do participante"
           placeholderTextColor={'#6B6B6B'}
-          // serve para alterar o type do TextInput
           keyboardType="default"
         />
 
@@ -23,6 +23,7 @@ export function Home() {
           <Text style={styles.buttonText}>+</Text>
         </TouchableOpacity>
       </View>
+      <Participant />
     </View>
   )
 }

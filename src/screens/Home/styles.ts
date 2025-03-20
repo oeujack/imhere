@@ -33,7 +33,7 @@ export const styles = StyleSheet.create({
   buttonAdd: {
     width: 56,
     height: 56,
-    borderRadius: 56,
+    borderRadius: 5,
     backgroundColor: '#31CF67',
     alignItems: 'center',
     justifyContent: 'center',
