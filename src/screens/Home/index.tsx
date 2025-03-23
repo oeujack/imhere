@@ -11,7 +11,7 @@ import { Participant } from '../../components/Participant'
 import { useState } from 'react'
 
 export function Home() {
-  const [participants, setParticipants] = useState([''])
+  const [participants, setParticipants] = useState<string[]>([])
   const [participantName, setParticipantName] = useState('')
 
   function handleAddUser() {
@@ -46,7 +46,7 @@ export function Home() {
   return (
     <View style={styles.container}>
       <Text style={styles.eventName}>Nome do evento</Text>
-      <Text style={styles.dayName}>Quarta-feira, 19 de Março de 2025.</Text>
+      <Text style={styles.dayName}>Sábado, 22 de Março de 2025.</Text>
 
       <View style={styles.viewForm}>
         <TextInput
