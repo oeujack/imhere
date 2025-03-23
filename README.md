@@ -36,7 +36,7 @@ git clone https://github.com/oeujack/imhere
 ``` 
 2  Acesse o projeto pelo terminal com o comando 
 ```
-cd ignite_rn_imhere
+cd imhere
 ```  
 3  Instale as dependências necessárias com o comando
 ```
