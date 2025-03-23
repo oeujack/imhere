@@ -2,9 +2,9 @@
 
 
 
-![GitHub repo size](https://img.shields.io/github/repo-size/maykonsousa/ignite_rn_imhere)
-![GitHub language count](https://img.shields.io/github/languages/count/maykonsousa/ignite_rn_imhere)
-![GitHub forks](https://img.shields.io/github/forks/maykonsousa/ignite_rn_imhere)
+![GitHub repo size](https://img.shields.io/github/repo-size/oeujack/imhere)
+![GitHub language count](https://img.shields.io/github/languages/count/oeujack/imhere)
+![GitHub forks](https://img.shields.io/github/forks/oeujack/imhere)
 
 
 
@@ -32,7 +32,7 @@ Para gerar uma cópia do projeto e implementar as suas melhorias, esteja em um c
 
 1  clone o projeto com o comando 
 ```
-git clone https://github.com/maykonsousa/ignite_rm_imhere
+git clone https://github.com/oeujack/imhere
 ``` 
 2  Acesse o projeto pelo terminal com o comando 
 ```
