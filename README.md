@@ -19,14 +19,6 @@
 
 - Trata-se de um aplicativo simples que simula a tela de uma lista de presença para um evento onde podem ser adicionados nome de participantes a medida que o participante chega
 
-## 🚀 TODO de melhorias
-- [ ] - Conectar com uma api própria ou um cms
-- [ ] - Permitir o usuário criar eventos
-- [ ] - Fornecer uma landing page onde o usuário obtenha informações do evento e possa se inscrever
-- [ ] - Enviar um email para o usuário com o QRCode do ingresso do evento que ele se increveu
-- [ ] - Incluir uma tela gerencial onde o produtor do evento possa ver a quantidade de inscritos
-- [ ] - incluir uma tela de Check-in onde seja possivel ler o QR code do convidado e validar a sua presença no evento
-
 ## 💻 Como usar o projeto
 Para gerar uma cópia do projeto e implementar as suas melhorias, esteja em um computador com Node Js instalado e siga as etapas abaixo:
 
@@ -52,8 +44,7 @@ npm run android
 ## 🌐 Links úteis
 [NodeJS](https://nodejs.org/en/download)  
 [Expo](https://expo.dev/)  
-[Android Studio](https://developer.android.com/studio/install?hl=pt-br)  
-[Figma do projeto](https://www.figma.com/file/AXOlKzH6ZUmKXWqfQXquhe/Chapter-I---Im-Here?type=design&node-id=0%3A1&mode=design&t=2D2quWd8YnSN11KK-1)
+[Android Studio](https://developer.android.com/studio/install?hl=pt-br)
 
 
 ## 🧑‍💻 Jackson dos Santos
