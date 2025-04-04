@@ -37,7 +37,7 @@ npm install
 
 4  Rode o projeto com o comando
 ```
-npm run android
+npm expo start
 ``` 
 5  Acesse o aplicativo em seu dispositívo físico com o app Expo Go ou pelo Android Studio 
 
